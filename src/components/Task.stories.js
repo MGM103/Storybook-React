@@ -6,6 +6,9 @@ import Task from './Task';
 export default {
   component: Task,
   title: 'Task',
+  parameters: {
+    componentSubtitle: 'Displays a Task',
+  },
 };
 
 const Template = args => <Task {...args} />;

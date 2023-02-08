@@ -2,6 +2,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+/**
+ *- Use a task to keep track of things you must complete.    
+ *- Tasks can be pinned or completed and the task will change to reflect these states
+ **/
 export default function Task({ task: { id, title, state }, onArchiveTask, onPinTask }) {
  return (
    <div className={`list-item ${state}`}>
